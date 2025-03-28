@@ -1,0 +1,71 @@
+body {
+    background-image: url('../assets/6500076.jpg');
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6E3230;
+    padding: 15px 30px;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+h1 {
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6E3230;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    margin: 10px 0;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.map iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #6E3230;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.navbar .logo a:hover {
+    text-decoration: underline;
+}
+.map iframe:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}

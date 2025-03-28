@@ -59,12 +59,12 @@ h1{
 }
 .cardapio-container{
     display: flex;
-    gap: 30px; /* Espaço entre os produtos */
+    gap: 30px;
     overflow-x: auto;
     padding: 20px 0;
-    justify-content: center; /* Centraliza horizontal */
-    align-items: center; /* Centraliza vertical */
-    flex-wrap: wrap; /* Faz quebrar linha no mobile */
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
 }
 
 .products-itens {
@@ -72,12 +72,12 @@ h1{
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 220px; /* Largura fixa pra todos */
+    width: 220px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .products-itens img {
-    width: 100%; /* Ocupa toda a largura da caixinha */
+    width: 100%;
     border-radius: 8px;
 }
 
@@ -94,7 +94,6 @@ h1{
 }
 
 
-/* Remover ids antigos */
 #img-1, #img-2, #img-3, #img-4, #img-5 {
     padding: 0;
     background: none;
@@ -104,8 +103,8 @@ h1{
     padding: 40px;
 }
 .products-itens:hover{
-    transform: translateY(-10px);
-}
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out; }
 h2{
     text-align: center;
     color: #6E3230;
