@@ -13,6 +13,33 @@ body{
     background-color: #6E3230;
     padding: 15px 30px;
 }
+.marquee {
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.marquee-inner {
+    display: flex;
+    gap: 50px; 
+    width: max-content;
+    animation: marquee-scroll 10s linear infinite;
+}
+
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(15%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
 
 .logo {
     display: flex;
@@ -51,6 +78,30 @@ body{
     text-decoration: underline;
     
 }
+/* Animações para "Recomendações do dia" e "Itens mais vendidos" */
+ul li, ol li {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+ul li:nth-child(1), ol li:nth-child(1) { animation-delay: 0.2s; }
+ul li:nth-child(2), ol li:nth-child(2) { animation-delay: 0.4s; }
+ul li:nth-child(3), ol li:nth-child(3) { animation-delay: 0.6s; }
+ul li:nth-child(4), ol li:nth-child(4) { animation-delay: 0.8s; }
+ul li:nth-child(5), ol li:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .img-product{
    
